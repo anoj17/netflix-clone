@@ -39,7 +39,7 @@ const RecentlyAdded = async () => {
                             className='w-full absolute object-cover rounded-sm h-full'
                         />
 
-                        <div className='relative h-60 w-full z-10 opacity-0 transform transition duration-500 scale-110 cursor-pointer hover:opacity-100'>
+                        <div className='relative h-60 w-full z-10 opacity-0 transform transition duration-500 scale-110 hover:opacity-100'>
                             <div className='bg-gradient-to-b from-transparent via-black/50 to-black 
                         z-10 w-full h-full flex justify-center items-center rounded-lg border
                         '>
