@@ -71,6 +71,9 @@ const MovieCard = ({ title,
         title={title}
         key={movieId}
         state={open}
+        duration={time}
+        release={year}
+        age={age}
         changeState={setOpen}
       />
     </>

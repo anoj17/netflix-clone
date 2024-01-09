@@ -7,10 +7,17 @@ interface iAppProps {
     overview: string;
     youtubeUrl: string;
     state: boolean;
-    changeState: any
+    changeState: any;
+    age: number;
+    duration: number;
+    release: number;
 }
 
-export const PlayVideoModel = ({ title,
+export const PlayVideoModel = ({ 
+    title,
+    age,
+    duration,
+    release,
     overview,
     youtubeUrl,
     state,
@@ -26,7 +33,14 @@ export const PlayVideoModel = ({ title,
                     <DialogDescription className='line-clamp-3'>
                         {overview}
                     </DialogDescription>
+                    <div className='flex gap-x-3 items-center'>
+                        <p>{release}</p>
+                        <p className='border border-gray-200 py-0.5 px-1 rounded'>{age}+</p>
+                        <p>{duration}</p>
+                    </div>
                 </DialogHeader>
+                <iframe src={youtubeUrl} height={250} className='w-full'>
+                </iframe>
             </DialogContent>
         </Dialog>
     </>
