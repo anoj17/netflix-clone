@@ -6,7 +6,7 @@ export default function SeedDataBase() {
     "use server";
     try {
       // createMany : provided bydefault prisma used to insert multiple record in db :)
-      
+
       await prisma.movie.createMany({
         data: [
           {
