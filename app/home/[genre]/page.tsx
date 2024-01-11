@@ -85,7 +85,7 @@ async function getData(category: string, userId: string) {
 const CategoryList = async ({ params }: { params: { genre: string } }) => {
 
     const session = await getServerSession(authOptions);
-    const data = await getData(params.genre, 'abc');
+    const data = await getData(params.genre, session?.user?.email as string);
 
     return (
         <div
