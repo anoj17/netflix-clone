@@ -174,7 +174,7 @@ export default function SeedDataBase() {
   return (
     <div className="m-5">
       <form action={postData}>
-        <Button type="submit">Submit</Button>
+        <Button type="submit">submit</Button>
       </form>
     </div>
   )
